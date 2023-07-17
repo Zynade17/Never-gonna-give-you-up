@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://kit.fontawesome.com/4323e11f89.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            style="height: 150px; width: 15%"
+            src="CSS/Dustin-logos_white.png"
+            class="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hello I'm <span>Dustin</span> <br />
+            From Philippines
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="fixed res/338527864_637212321557637_3574303747598410383_n-removebg-preview.png"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Hello, I'm Dustin Eron Poyaoan, a dedicated and ambitious student
+              studying computer science with a strong aspiration to become a
+              skilled software engineer. I am passionate about exploring the
+              ever-evolving world of technology and its endless possibilities.
+              Through my studies in computer science, I have developed a solid
+              foundation in key areas such as programming languages, algorithms,
+              and data structures. I thrive on solving complex problems and
+              applying logical thinking to create innovative and efficient
+              software solutions. With each passing day, I am committed to
+              expanding my knowledge and refining my skills in software
+              development.
+              I am a strong believer in collaboration, as it
+              brings together diverse perspectives and fuels creativity, leading
+              to enhanced outcomes. Driven by a desire for excellence, I
+              approach every challenge with diligence, discipline, and a growth
+              mindset. I am excited about the endless possibilities that lie
+              ahead in my journey to becoming a proficient software engineer. I
+              invite you to explore my portfolio and witness my passion for
+              computer science and software engineering firsthand. Together,
+              let's build a future powered by innovative technology
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Software Engineer</span><br />Designing/Developing
+                  Softwares
+                </li>
+                <li><span>Web Designer</span><br />Create/Code Web Pages</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Self taught</span><br />Coding for fun</li>
+                <li><span>None</span><br />Currently Studying</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Elementary</span><br />Malacañang Elementary School
+                </li>
+                <li>
+                  <span>High School</span><br />Macalañang National High School
+                </li>
+                <li>
+                  <span>Senior High School</span><br />Macalañang National High
+                  School
+                </li>
+                <li>
+                  <span>College</span><br />Virgin Milagrosa University
+                  Foundation<li><span>High School</span><br />Macalañang National High School</li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Services-->
+    <div class="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-connectdevelop"></i>
+            <h2>Software Engineering</h2>
+            <p>I will be designing and developing effective software solutions to meet your requirements!</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I will plan, create, and code internet sites and web pages for you!</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="subtitle">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="CSS/work1.jpg">
+            <div class="layer">
+              <h3>Coding</h3>
+              <p>My go to training ground for developing my skills!</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="CSS/work2.jpg">
+            <div class="layer">
+              <h3>Web Development</h3>
+              <p>I will develop different websites that will suit your needs!</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="CSS/work3.png">
+            <div class="layer">
+              <h3>Web Designing</h3>
+              <p>I will code and design your website based on your preferences!</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!--Contacts-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> nfswacct70@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 09567664407</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/eron.poyaoan" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/dustinpoyaoan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Dustin. Made with <i class="fa-solid fa-heart"></i> by Dustin Poyaoan</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links")
+      var tabcontents = document.getElementsByClassName("tab-contents")
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+
+    </script>
+  </body>
+</html>
